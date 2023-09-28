@@ -1,0 +1,31 @@
+{
+  "name": "drizzle-circ-dep",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "check": "tsc",
+    "db:push": "drizzle-kit push:pg"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.17.5",
+    "drizzle-kit": "^0.19.13",
+    "esbuild": "^0.14.54",
+    "postcss": "^8.4.28",
+    "solid-start-node": "^0.3.6",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.6",
+    "@solidjs/router": "^0.8.3",
+    "drizzle-orm": "^0.28.6",
+    "pg": "^8.11.3",
+    "solid-js": "^1.7.12",
+    "solid-start": "^0.3.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
