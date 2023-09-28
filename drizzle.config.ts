@@ -1,8 +1,14 @@
 import type { Config } from "drizzle-kit";
+
 export default {
   driver: "pg",
   schema: "./src/schema/**/*.schema.ts",
   dbCredentials: {
-    connectionString: "postgresql://localhost:5432/test",
+    port: 5433,
+    host: "localhost",
+    database: "test",
+    user: "postgres",
+    password: "p0stgr3s",
   },
 } satisfies Config;
+
